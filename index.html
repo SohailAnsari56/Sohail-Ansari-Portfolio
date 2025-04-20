@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sohail Ansari - Portfolio</title>
+  <style>
+    :root {
+      --main-color: #004d7a;
+      --accent-color: #00c6ff;
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+      --card-bg: #ffffff;
+      --dark-bg: #121212;
+      --dark-card: #1e1e1e;
+      --dark-text: #f5f5f5;
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: background 0.4s, color 0.4s;
+    }
+
+    body.dark-mode {
+      background: var(--dark-bg);
+      color: var(--dark-text);
+    }
+
+    .dark-mode .card {
+      background: var(--dark-card);
+      color: var(--dark-text);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--main-color), var(--accent-color));
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      animation: fadeInDown 1s ease;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      animation: fadeInUp 1s ease;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      animation: fadeInUp 0.6s ease both;
+    }
+
+    h2 {
+      color: var(--main-color);
+      border-left: 4px solid var(--accent-color);
+      padding-left: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease, background 0.4s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .half {
+      flex: 1 1 48%;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--main-color);
+      color: white;
+      margin-top: 2rem;
+    }
+
+    a {
+      color: var(--accent-color);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <header>
+    <h1>Sohail Ansari</h1>
+    <p>Fresher | Passionate Learner | Aspiring Professional</p>
+  </header>
+  <div class="container">
+    <section>
+      <h2>Objective</h2>
+      <div class="card">
+        <p>To contribute to a dynamic and challenging work environment where I can apply and enhance my skills while continuously growing professionally. I am committed to becoming a valuable asset to the organization through dedication, adaptability, and a strong willingness to learn.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="card">
+        <strong>H.S.C.</strong> - Royal College of Arts, Science and Commerce, Mumbai<br />
+        <strong>S.S.C.</strong> - N.H. English Academy, Mumbai
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="flex">
+        <div class="card half">
+          <strong>Technical Skills</strong>
+          <ul>
+            <li>Microsoft Word, Excel, PowerPoint</li>
+            <li>AI Tools for productivity</li>
+          </ul>
+        </div>
+        <div class="card half">
+          <strong>Soft Skills</strong>
+          <ul>
+            <li>Quick learner & analytical thinker</li>
+            <li>Effective communicator & team player</li>
+            <li>Calm under pressure</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Strengths</h2>
+      <div class="card">
+        <ul>
+          <li>Belief in teamwork and collaboration</li>
+          <li>Hardworking and result-oriented</li>
+          <li>Solution-driven and confident</li>
+          <li>Supportive of others’ strengths</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Hobbies</h2>
+      <div class="card">
+        <ul>
+          <li>Solo road trips & nature exploration</li>
+          <li>Enjoying peaceful time at the seashore</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:sohailansari93244@gmail.com">sohailansari93244@gmail.com</a><br />
+        Phone: +91 93244 84495</p>
+        <p>Location: Mira Road (East), Thane - 401107</p>
+        <p><a href="SohailAnsari_CV.pdf" download>Download Resume</a></p>
+      </div>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 Sohail Ansari. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
